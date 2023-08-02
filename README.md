@@ -1,6 +1,6 @@
-# Laravel Simple Rest API
+# Laravel Simple Rest API with Sanctum Auth
 
-<p>This is a Laravel Rest Api products app with CRUD operation but without Authentication</p>
+<p>This is a Laravel Rest Api products app with CRUD operation and Sanctum Authentication</p>
 
 
 ## Authentication Routes
@@ -26,52 +26,52 @@
 
 
 ## Registration (http://127.0.0.1:8000/api/v1/register)
-![registerapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/register.PNG?raw=true)
+![registerapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/register.PNG?raw=true)
 
 ## Login 401 (http://127.0.0.1:8000/api/v1/login)
-![login401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/login401.PNG?raw=true)
+![login401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/login401.PNG?raw=true)
 
 ## Login (http://127.0.0.1:8000/api/v1/login)
-![loginapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/login.PNG?raw=true)
+![loginapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/login.PNG?raw=true)
 
 ## User Details 401 (http://127.0.0.1:8000/api/v1/user)
-![user401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/user401.PNG?raw=true)
+![user401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/user401.PNG?raw=true)
 
 ## User Details (http://127.0.0.1:8000/api/v1/user)
-![userapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/user.PNG?raw=true)
+![userapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/user.PNG?raw=true)
 
 ## Get All products 401 (http://127.0.0.1:8000/api/v1/products/)
-![getallproducts401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/getAllProducts401.PNG?raw=true)
+![getallproducts401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/getAllProducts401.PNG?raw=true)
 
 ## Get All products (http://127.0.0.1:8000/api/v1/products/)
-![getallproductsapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/getAllProducts.PNG?raw=true)
+![getallproductsapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/getAllProducts.PNG?raw=true)
 
 ## Get Single Product 401 (http://127.0.0.1:8000/api/v1/products/20)
-![getsingleproduct401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/getSingleProduct401.PNG?raw=true)
+![getsingleproduct401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/getSingleProduct401.PNG?raw=true)
 
 ## Get Single Product (http://127.0.0.1:8000/api/v1/products/20)
-![getsingleproductapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/getSingleProduct.PNG?raw=true)
+![getsingleproductapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/getSingleProduct.PNG?raw=true)
 
 ## Create Single Product 401 (http://127.0.0.1:8000/api/v1/products/)
-![createsingleproduct401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/createSingleProduct401.PNG?raw=true)
+![createsingleproduct401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/createSingleProduct401.PNG?raw=true)
 
 ## Create Single Product (http://127.0.0.1:8000/api/v1/products/)
-![createsingleproductapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/createSingleProduct.PNG?raw=true)
+![createsingleproductapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/createSingleProduct.PNG?raw=true)
 
 ## Update Single Product 401 (http://127.0.0.1:8000/api/v1/products/22)
-![updatesingleproduct401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/updateSingleProduct401.PNG?raw=true)
+![updatesingleproduct401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/updateSingleProduct401.PNG?raw=true)
 
 ## Update Single Product (http://127.0.0.1:8000/api/v1/products/22)
-![updatesingleproductapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/updateSingleProduct.PNG?raw=true)
+![updatesingleproductapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/updateSingleProduct.PNG?raw=true)
 
 ## Delete Single Product 401 (http://127.0.0.1:8000/api/v1/products/23)
-![deletesingleproduct401api](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/deleteSingleProduct401.PNG?raw=true)
+![deletesingleproduct401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/deleteSingleProduct401.PNG?raw=true)
 
 ## Delete Single Product (http://127.0.0.1:8000/api/v1/products/23)
-![deletesingleproductapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/deleteSingleProduct.PNG?raw=true)
+![deletesingleproductapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/deleteSingleProduct.PNG?raw=true)
 
 ## 404 Response
-![404singleproductapi](https://github.com/EngrAbuhena/laravel-simple-api/blob/photos/404.PNG?raw=true)
+![404singleproductapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/404.PNG?raw=true)
 
 ## Security Vulnerabilities
 
