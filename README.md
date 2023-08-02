@@ -35,10 +35,10 @@
 ![loginapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/login.PNG?raw=true)
 
 ## User Details 401 (http://127.0.0.1:8000/api/v1/user)
-![user401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/user401.PNG?raw=true)
+![userDetails401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/userDetails401.PNG?raw=true)
 
 ## User Details (http://127.0.0.1:8000/api/v1/user)
-![userapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/user.PNG?raw=true)
+![userDetailsapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/userDetails.PNG?raw=true)
 
 ## Get All products 401 (http://127.0.0.1:8000/api/v1/products/)
 ![getallproducts401api](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/getAllProducts401.PNG?raw=true)
