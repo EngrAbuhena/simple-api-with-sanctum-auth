@@ -3,6 +3,7 @@
 namespace App\Exceptions;
 
 use http\Exception;
+use Illuminate\Auth\AuthenticationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -27,11 +28,26 @@ class Handler extends ExceptionHandler
     // This function will replace 404 error page with json response
     public function register(): void
     {
+        // 401 Exception
+        $this->renderable(function (AuthenticationException $e, $request) {
+            if ($request->is('api/*')) {
+                return $request->expectsJson() ?: response()->json([
+                    'success'=>false,
+                    'message' => 'Unauthenticated.',
+                    'status' => 401,
+                    'Description' => 'Missing or Invalid Access Token'
+                ], 401);
+            }
+        });
+
+        // 404 Exception
         $this->renderable(function (NotFoundHttpException $e, $request) {
             if ($request->is('api/*')) {
-                return response()->json([
+                return $request->expectsJson() ?: response()->json([
                     'success'=>false,
-                    'message' => 'Record not found.'
+                    'message' => 'Not Found.',
+                    'status' => 404,
+                    'Description' => 'Resource Not Found.'
                 ], 404);
             }
         });

@@ -10,11 +10,8 @@ class Products extends Model
     use HasFactory;
 
     // mass assignment
-    public mixed $name;
-    public mixed $price;
-    public mixed $description;
     protected $fillable = [
         'name', 'price', 'description'
     ];
-    
+
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\ProductsController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -10,31 +11,27 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
 |
 */
 
-Route::controller(AuthController::class)->group(function () {
-    Route::post('register', 'register');
-    Route::post('login', 'login');
-    Route::post('logout', 'logout');
+Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
+    return $request->user();
 });
 
 
-Route::middleware('auth:sanctum')->group(function () {
+//These routes are NOT protected using middleware
+
+Route::prefix('v1')->group(function () {
+    Route::post('login', [AuthController::class, 'login']);
+    Route::post('register', [AuthController::class, 'register']);
+});
+
+
+//These routes are protected using middleware
+Route::prefix('v1')->middleware('auth:sanctum')->group(function () {
+    Route::get('user',[AuthController::class, 'userDetails']);
+    Route::post('logout', [AuthController::class, 'logout']);
     Route::resource('products', ProductsController::class);
 });
-
-Route::fallback(function(){
-    return response()->json(['success'=>false,'message' => 'Not Found!'], 404);
-});
-
-// Route::get('products', [ProductsController::class, 'index'])->name('products.index');
-// Route::get('products/{product}', [ProductsController::class, 'show'])->name('products.show');
-
-// Route::post('products', [ProductsController::class, 'store'])->name('products.store');
-
-// Route::put('products/{product}', [ProductsController::class, 'update'])->name('products.update');
-
-// Route::delete('products/{product}', [ProductsController::class, 'destroy'])->name('products.destroy');
